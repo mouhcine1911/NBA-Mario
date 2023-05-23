@@ -1,18 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Video Player</title>
+    <style>
+        body {
+            max-width: 100%;
+            max-height: 100px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        video {
+            filter: blur(10px); /* Ajout du flou à la vidéo */
+        }
+
+      
+    </style>
 </head>
 <body>
-    
-       
-    <video src="ressources/video.mp4" width="200" height="200" poster="ressources/miniature.jpg" controls="controls" autoplay  playsinline preload="auto" id="idvideo">
-        
-        
-       Votre navigateur ne prend pas en charge la video HTML
+    <video src="ressources/video.mp4" width="200" height="200" poster="ressources/miniature.jpg" controls="controls" autoplay playsinline preload="auto" id="idvideo">
+        Votre navigateur ne prend pas en charge la vidéo HTML.
     </video>
-        
 </body>
 </html>
